@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>艺术作品拼图游戏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/pure-min.css">
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        h1 {
+            color: #1f8dd6;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+        }
+        .selection-text {
+            font-size: 1.2em;
+            color: #636363;
+            margin-bottom: 30px;
+        }
+        .artwork-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .artwork-item {
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .artwork-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .artwork-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .artwork-item a {
+            text-decoration: none;
+            color: #4e99c7;
+        }
+        .artwork-info {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>艺术作品拼图游戏</h1>
+    
+    <div class="selection-text">请选择你要拼图的艺术作品</div>
+    
+    <div class="artwork-grid">
+        <div class="artwork-item">
+            <a href="StarlitNight.html?artwork=1">
+                <img src="images/StarlitNight.jpg" alt="星夜">
+                <div class="artwork-info">
+                    <h3>星夜</h3>
+                    <p>文森特·梵高</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="artwork-item">
+            <a href="Flower.html?artwork=2">
+                <img src="images/Flower.jpg" alt="蒙娜丽莎">
+                <div class="artwork-info">
+                    <h3>鸢尾花</h3>
+                    <p>文森特·梵高</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="artwork-item">
+            <a href="SunFlower.html?artwork=3">
+                <img src="images/SunFlower.png" alt="向日葵">
+                <div class="artwork-info">
+                    <h3>十五朵向日葵</h3>
+                    <p>文森特·梵高</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="artwork-item">
+            <a href="PeachBlossom.html?artwork=4">
+                <img src="images/PeachBlossom.jpg" alt="桃花">
+                <div class="artwork-info">
+                    <h3>桃树花开</h3>
+                    <p>文森特·梵高</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
